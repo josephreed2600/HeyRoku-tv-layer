@@ -1,11 +1,11 @@
 const logger = require('logger').get('power');
 
 const powerOn = (req, res) => {
-	res.redirect('/keypress/powerOn');
+	res.redirect(308, '/keypress/powerOn');
 };
 
 const powerOff = (req, res) => {
-	res.redirect('/keypress/powerOff');
+	res.redirect(308, '/keypress/powerOff');
 };
 
 const routes = [

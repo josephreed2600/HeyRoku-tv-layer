@@ -1,4 +1,5 @@
 const logger = require('logger').get('fallback');
+const fetch = require('node-fetch');
 
 let default_bob = null;
 
@@ -8,6 +9,7 @@ const redirect = (req, res) => {
 	//let queries = url.parse(req.originalUrl);
 	//console.log(queries);
 	res.redirect(308, dest + req.originalUrl); // 308: don't change methods
+	//fetch(dest + req.originalUrl, {method: req.method}).then(res.send.bind(res));
 };
 
 const routes = [

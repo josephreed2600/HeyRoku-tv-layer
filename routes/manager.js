@@ -9,7 +9,7 @@ const apply = (app, component) => {
 				route.handlers.forEach((handler) => {
 					app[method](url, handler);
 				});
-				if(component.logger) component.logger.info(`Adding route: ${method.toLocaleUpperCase()} ${route.url}`);
+				if(component.logger) component.logger.info(`Adding route: ${method.toLocaleUpperCase()} ${url}`);
 			});
 		});
 	});

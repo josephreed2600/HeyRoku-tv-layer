@@ -24,7 +24,7 @@ app.use(bodyParser.json());
 logger.info('Configured Express.');
 
 logger.info('Configuring routes...');
-const routeFiles = ['power', 'launch', 'fallback'];
+const routeFiles = ['debug', 'power', 'launch', 'fallback'];
 const routeManager = require('./routes/manager');
 routeFiles.forEach((file) => {
 	logger.info(`Adding ${file} routes...`);
@@ -36,4 +36,4 @@ routeFiles.forEach((file) => {
 logger.info('Configured routes.');
 
 logger.info(`Listening on port ${config.port}`);
-app.listen(config.port);
+app.listen(config.port, '0.0.0.0');
