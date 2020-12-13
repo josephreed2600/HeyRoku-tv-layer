@@ -10,14 +10,14 @@ const powerOff = (req, res) => {
 
 const routes = [
 	{
-		url: '/power/on',
-		methods: ['post'],
-		handler: powerOn
+		urls: '/power/on',
+		methods: 'post',
+		handlers: powerOn
 	}
 ,	{
-		url: '/power/off',
-		methods: ['post'],
-		handler: powerOff
+		urls: '/power/off',
+		methods: 'post',
+		handlers: powerOff
 	}
 ];
 

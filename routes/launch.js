@@ -38,14 +38,14 @@ const launch = (req, res) => {
 
 const routes = [
 	{
-		url: '/start',
-		methods: ['post'],
-		handler: launch
+		urls: '/start',
+		methods: 'post',
+		handlers: launch
 	}
 ,	{
-		url: '/start/:query',
-		methods: ['post'],
-		handler: launch
+		urls: '/start/:query',
+		methods: 'post',
+		handlers: launch
 	}
 ];
 

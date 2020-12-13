@@ -12,9 +12,9 @@ const redirect = (req, res) => {
 
 const routes = [
 	{
-		url: '*',
-		methods: ['all'],
-		handler: redirect
+		urls: '*',
+		methods: 'all',
+		handlers: redirect
 	}
 ];
 
