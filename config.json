@@ -1,0 +1,5 @@
+{
+	"//": "Alice is the host sending the request; Bob is the intended recipient down the line (like a TV)",
+	"default_bob": "http://192.168.1.182:8060",
+	"port": 8060
+}
