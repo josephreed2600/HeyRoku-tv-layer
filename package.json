@@ -1,0 +1,18 @@
+{
+  "name": "heyroku",
+  "version": "0.0.0",
+  "description": "A transparent layer to add functionality to the Roku ECP API.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Joe Reed, Ryan Unroe",
+  "license": "UNLICENSED",
+  "dependencies": {
+    "express": "^4.17.1",
+    "leven-sort": "^3.0.0",
+    "logger": "github:josephreed2600/logger#master",
+    "node-fetch": "^2.6.1",
+    "xml2js": "^0.4.23"
+  }
+}
